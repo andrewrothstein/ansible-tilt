@@ -1,0 +1,11 @@
+---
+# vars file for tilt
+tilt_platform: '{{ tilt_os }}.{{ tilt_arch }}'
+tilt_name: tilt.{{ tilt_ver }}.{{ tilt_platform }}
+tilt_archive: '{{ tilt_name }}.{{ tilt_archive_type | default("tar.gz") }}'
+tilt_tmp_archive: /tmp/{{ tilt_archive }}
+tilt_url: '{{ tilt_mirror }}/v{{ tilt_ver }}/{{ tilt_archive }}'
+tilt_checksum: '{{ tilt_checksums[tilt_ver][tilt_platform] }}'
+tilt_install_dir: '{{ tilt_parent_install_dir }}/{{ tilt_name }}'
+tilt_exe: '{{ tilt_install_dir }}/tilt'
+tilt_link: '{{ tilt_parent_install_dir }}/bin/tilt'
