@@ -25,18 +25,18 @@ dl_ver() {
     local lchecksums="$DIR/${APP}_${ver}_checksums.txt"
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $url
+        curl -sSLf -o $lchecksums $url
     fi
 
     printf "  # %s\n" $url
     printf "  '%s':\n" $ver
 
-    dl $ver $lchecksums mac arm64_ALPHA
+    dl $ver $lchecksums mac arm64
     dl $ver $lchecksums mac x86_64
-    dl $ver $lchecksums linux arm_ALPHA
-    dl $ver $lchecksums linux arm64_ALPHA
+    dl $ver $lchecksums linux arm
+    dl $ver $lchecksums linux arm64
     dl $ver $lchecksums linux x86_64
     dl $ver $lchecksums windows x86_64 zip
 }
 
-dl_ver ${1:-0.22.5}
+dl_ver ${1:-0.27.2}
