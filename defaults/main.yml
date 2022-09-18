@@ -1,6 +1,6 @@
 ---
 # defaults file for tilt
-tilt_ver: 0.27.2
+tilt_ver: 0.30.7
 tilt_mirror: https://github.com/tilt-dev/tilt/releases/download
 tilt_os: linux
 tilt_arch: x86_64
@@ -174,3 +174,17 @@ tilt_checksums:
     linux.x86_64: sha256:3e4eba61f03fdfeb18a88c053b18a6355bcbe3cfe0d1ebe06d448846b2654b90
     # https://github.com/tilt-dev/tilt/releases/download/v0.27.2/tilt.0.27.2.windows.x86_64.zip
     windows.x86_64: sha256:6de0545cdca3356e87249506dbc247cf1d1bfdd9a18220dd8dc0f6a20b033b8a
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/checksums.txt
+  '0.30.7':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.mac.arm64.tar.gz
+    mac.arm64: sha256:7d8f2d892ae0d9a27963dc3c06064c3168f91c259ac53e9ea8613ba1cdce75d5
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.mac.x86_64.tar.gz
+    mac.x86_64: sha256:f1ad2ec9cd83973db7e5675a5cb36b2dd107de046b5c56ba2cb902fabc8ee785
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.linux.arm.tar.gz
+    linux.arm: sha256:aa4e9f6921d8553f279e45acbad04a3e10c5471d177d829bbca401b5437a8379
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.linux.arm64.tar.gz
+    linux.arm64: sha256:a242fd713910d941257f9d42d7b6780796b7fcc9bb89ffbd82a561c2d1baab71
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.linux.x86_64.tar.gz
+    linux.x86_64: sha256:ca7b09e5b0be1c8dee3af97548ec71063657b4abe6d93ca8f47452a6f73fde63
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.windows.x86_64.zip
+    windows.x86_64: sha256:e6648f345698bfce6375e6d694dcd2e2c0127dd7a814ce6af3a31670432bd61d
