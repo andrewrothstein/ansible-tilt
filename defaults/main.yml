@@ -1,9 +1,15 @@
 ---
 # defaults file for tilt
-tilt_ver: 0.30.7
+tilt_ver: 0.30.13
 tilt_mirror: https://github.com/tilt-dev/tilt/releases/download
-tilt_os: linux
-tilt_arch: x86_64
+tilt_os_map:
+  Linux: linux
+  Darwin: mac
+  Windows: windows
+tilt_arch_map:
+  aarch64: arm64_ALPHA
+  arm64: arm64_ALPHA
+  x86_64: x86_64
 tilt_parent_install_dir: /usr/local
 tilt_checksums:
   # https://github.com/tilt-dev/tilt/releases/download/v0.22.5/checksums.txt
@@ -188,3 +194,87 @@ tilt_checksums:
     linux.x86_64: sha256:ca7b09e5b0be1c8dee3af97548ec71063657b4abe6d93ca8f47452a6f73fde63
     # https://github.com/tilt-dev/tilt/releases/download/v0.30.7/tilt.0.30.7.windows.x86_64.zip
     windows.x86_64: sha256:e6648f345698bfce6375e6d694dcd2e2c0127dd7a814ce6af3a31670432bd61d
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/checksums.txt
+  '0.30.8':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/tilt.0.30.8.mac.arm64.tar.gz
+    mac.arm64: sha256:0645e20caf23304c07b2373688b0bbcf503b1d1d14ec0691aac1d812da1caa28
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/tilt.0.30.8.mac.x86_64.tar.gz
+    mac.x86_64: sha256:d6421ef39d2af12949310e2ac59bd8112a56cf5e00f9e8205321e5eab05ae385
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/tilt.0.30.8.linux.arm.tar.gz
+    linux.arm: sha256:0022b296b58838955f07dbf66f3b7070d80296ac359a99fb784c9944943f0947
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/tilt.0.30.8.linux.arm64.tar.gz
+    linux.arm64: sha256:e2329f4cc1f5d465a9dbefb6fd97ef68825c9f660a0ea20c7f67bdc4a34daa39
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/tilt.0.30.8.linux.x86_64.tar.gz
+    linux.x86_64: sha256:ebbf4c41258a6908f9cf297768523755a4f4b0357bf16ad91de6f0b2c21c7d9c
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.8/tilt.0.30.8.windows.x86_64.zip
+    windows.x86_64: sha256:d1108281063ebd57d505fe2146030eaa2a4b1fbd2dd989cb4648302242c8db03
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/checksums.txt
+  '0.30.9':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/tilt.0.30.9.mac.arm64.tar.gz
+    mac.arm64: sha256:ac59dcdee63cd0552d69f3099cee004e11fed3d8d5a399695c39cc2eac157ce9
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/tilt.0.30.9.mac.x86_64.tar.gz
+    mac.x86_64: sha256:f1cfd81071135c1c993d4b09ef2bbd7ce6d529baeaf3c7d8f832567bd4fb0a80
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/tilt.0.30.9.linux.arm.tar.gz
+    linux.arm: sha256:ce0fe1d127159d5f97fd7f41a73b450ddd2f96bdd33e2a2851645b4bdb75320d
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/tilt.0.30.9.linux.arm64.tar.gz
+    linux.arm64: sha256:6f664277ab15b5745fba148a14d2267bbf6b4456a7b88be28bd64340b4802c11
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/tilt.0.30.9.linux.x86_64.tar.gz
+    linux.x86_64: sha256:5a6454704de6a1524e69079bd95f15dd718d3237f831ba13118cf5ad7fc5f70f
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.9/tilt.0.30.9.windows.x86_64.zip
+    windows.x86_64: sha256:5d94274132dd169dc965f8a9a1959cc5555b1ea9f15871845e2b35796ad9b188
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/checksums.txt
+  '0.30.10':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/tilt.0.30.10.mac.arm64.tar.gz
+    mac.arm64: sha256:46ea1952c0b8a0ac667f58851a5e7dfaebe8d7dbdadeedc5987c4032fe210fc8
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/tilt.0.30.10.mac.x86_64.tar.gz
+    mac.x86_64: sha256:bae4600032dec1edd85f6faf444085aca462ab824b238208cf2c5b400bf6b062
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/tilt.0.30.10.linux.arm.tar.gz
+    linux.arm: sha256:74ad3a1cc550627dcfeea87cacd5c460f8c79a021d56183d2efbf97d0a6052b4
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/tilt.0.30.10.linux.arm64.tar.gz
+    linux.arm64: sha256:21a885180b7b3b03779a6d7aecabdcc3db994ac3d32a7de89c18f5bf0f01ac93
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/tilt.0.30.10.linux.x86_64.tar.gz
+    linux.x86_64: sha256:67133d806f900eef0a36665b39b8c9ef7d70eacb0f4876ede3ce627049aaa6cf
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.10/tilt.0.30.10.windows.x86_64.zip
+    windows.x86_64: sha256:07a9b58af77bb49681c839defe219e62b9cc9672226c7935742488ef6bcea072
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/checksums.txt
+  '0.30.11':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/tilt.0.30.11.mac.arm64.tar.gz
+    mac.arm64: sha256:628f0c7b75b0ac76f035407dfba767c8508265c27a9c453c8f500aac33e84e8f
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/tilt.0.30.11.mac.x86_64.tar.gz
+    mac.x86_64: sha256:df99f11b9dc8efcfe3ca0edf740f4dc1f67a1cffeed84bc455b0b16d96cf9ca9
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/tilt.0.30.11.linux.arm.tar.gz
+    linux.arm: sha256:2f3bcb2f0528321eac40662392d3299283b26a6bef654b35a7eebcce42a08e97
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/tilt.0.30.11.linux.arm64.tar.gz
+    linux.arm64: sha256:467ab9f9be563bb9f981d8ad0eaf4a69f63f830e8a2009dcddbee237f91dd630
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/tilt.0.30.11.linux.x86_64.tar.gz
+    linux.x86_64: sha256:1bcc1e3529f78ef1be040754321276de7fb84877dac70f3032191887e6f15a02
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.11/tilt.0.30.11.windows.x86_64.zip
+    windows.x86_64: sha256:bf695055bec411527594eb0445086a077407ca6295b406eea032c28d3b47d386
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/checksums.txt
+  '0.30.12':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/tilt.0.30.12.mac.arm64.tar.gz
+    mac.arm64: sha256:7a725644eb44b4663811ba5c166a16962b3434f143ce6a00baf9bdc0920a890e
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/tilt.0.30.12.mac.x86_64.tar.gz
+    mac.x86_64: sha256:fbc4fa775ad47c2c8d6801009c3283c4e124f990f1234db806ef0b66268f230a
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/tilt.0.30.12.linux.arm.tar.gz
+    linux.arm: sha256:d044720418c2bd1e3279e41517a574cbfe53839a86efc74f434d705974daac4f
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/tilt.0.30.12.linux.arm64.tar.gz
+    linux.arm64: sha256:95d843a24d1b4e04e375a44ddb29908739df2aa3a4b96e129128fce0d8ba66ca
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/tilt.0.30.12.linux.x86_64.tar.gz
+    linux.x86_64: sha256:90178633c010ebd499277b645b6b1303406af801133f77966c77f75da9d12484
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.12/tilt.0.30.12.windows.x86_64.zip
+    windows.x86_64: sha256:dc51941b2c309b0a81fd2145add37706db6fd4a42070b64550410a1a799161a5
+  # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/checksums.txt
+  '0.30.13':
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/tilt.0.30.13.mac.arm64.tar.gz
+    mac.arm64: sha256:14a86eeaf4206d577aceca959c2a6287b219531f3debbec322a6003977a87c59
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/tilt.0.30.13.mac.x86_64.tar.gz
+    mac.x86_64: sha256:ff27a48127c3163b7b20598064ad0fbb1a5cb613dc727df749c7f139734580a1
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/tilt.0.30.13.linux.arm.tar.gz
+    linux.arm: sha256:6edbd92b035a034f4d48a8ac48327b3a8146f95e91919bd6e3cd6154db69ea3c
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/tilt.0.30.13.linux.arm64.tar.gz
+    linux.arm64: sha256:a8add2fbc01aa9c96883bc069d8ae4a85c84b0056d79cfa49ba2e5c028fb3df3
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/tilt.0.30.13.linux.x86_64.tar.gz
+    linux.x86_64: sha256:81e8ab77a2c820e4e9372337b199c2e1b455a7c21c16b1c85cd43cf7f88e7153
+    # https://github.com/tilt-dev/tilt/releases/download/v0.30.13/tilt.0.30.13.windows.x86_64.zip
+    windows.x86_64: sha256:77e5f7ab8fdff289cfbe9eea8b481d0696ac700997accdf2b2c3e691d8551595

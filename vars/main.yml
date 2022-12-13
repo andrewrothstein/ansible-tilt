@@ -1,5 +1,7 @@
 ---
 # vars file for tilt
+tilt_os: '{{ tilt_os_map[ansible_system] }}'
+tilt_arch: '{{ tilt_arch_map[ansible_architecture] }}'
 tilt_platform: '{{ tilt_os }}.{{ tilt_arch }}'
 tilt_name: tilt.{{ tilt_ver }}.{{ tilt_platform }}
 tilt_archive: '{{ tilt_name }}.{{ tilt_archive_type | default("tar.gz") }}'
