@@ -1,7 +1,4 @@
 ---
-- name: Installing andrewrothstein.unarchivedeps
-  ansible.builtin.include_role:
-    name: andrewrothstein.unarchivedeps
 - name: Resolve platform specific vars
   ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
@@ -12,9 +9,9 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: Check for install in {{ tilt_install_dir }}
+- name: Check for install at {{ tilt_exe }}
   ansible.builtin.stat:
-    path: '{{ tilt_install_dir }}'
+    path: '{{ tilt_exe }}'
   changed_when: false
   register: tilt_binary
 - name: Downloading and installing tilt
@@ -35,6 +32,9 @@
         path: '{{ tilt_install_dir }}'
         state: directory
         mode: '755'
+    - name: Installing andrewrothstein.unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
     - name: Unarchive {{ tilt_tmp_archive }}
       become: true
       become_user: root
