@@ -21,6 +21,7 @@ dl() {
 dl_ver() {
     local ver=$1
     # https://github.com/tilt-dev/tilt/releases/download/v0.22.5/checksums.txt
+    # https://github.com/tilt-dev/tilt/releases/download/v0.33.22/checksums.txt
     local url="$MIRROR/v$ver/checksums.txt"
     local lchecksums="$DIR/${APP}_${ver}_checksums.txt"
     if [ ! -e $lchecksums ];
@@ -39,4 +40,4 @@ dl_ver() {
     dl $ver $lchecksums windows x86_64 zip
 }
 
-dl_ver ${1:-0.33.21}
+dl_ver ${1:-0.33.22}
